@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "InterLight";
+  src: url("./../assets/fonts/InterLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "InterRegular";
+  src: url("./../assets/fonts/InterRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "InterMedium";
+  src: url("./../assets/fonts/InterMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("./../assets/fonts/InterBold.otf") format("opentype");
+}
+
+:root {
+  --gp-green: #4A7B39;
+  --graphic-green: #007e0d;
+  --reverse-green: #3c9832;
+  --mug-green: #4CAF50;
+  --terracota: #E2725B;
+  --matte-black: #1a1a1a;
+  --white: #ffffff;
+  --dark-gray: #4c4d4e;
+  --medium-gray: #a9a8a9;
+  --light-gray: #eeeeee;
+  --background-black: #000000;
+  --cool-gray: #252525;
+  --cool-gray2: #8a8a8d;
+  --dark-gray2: #4d4d4f;
+  --cool-gray6: #a9a8a9;
+  --gray-cart-opacity: rgba(255, 255, 255, 0.2);
+  --black-cart-opacity: rgba(0, 0, 0, 0.25);
+  --transparent: rgba(255, 255, 255, 0);
+  --gp-green-blur: rgba(74, 123, 57, 0.6)
+  --navbar-hover: rgba(255, 218, 218, 1);
+}
+
+* {
+  font-family: "InterLight";
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
