@@ -6,10 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        interLight: ["InterLight", "sans-serif"],
-        interRegular: ["InterRegular", "sans-serif"],
-        interMedium: ["InterMedium", "sans-serif"],
-        interBold: ["InterBold", "sans-serif"],
+        interLight: ["Inter-Light", "sans-serif"],
+        interRegular: ["Inter-Regular", "sans-serif"],
+        interMedium: ["Inter-Medium", "sans-serif"],
+        interBold: ["Inter-Bold", "sans-serif"],
+        interExtraBold: ["Inter-ExtraBold", "sans-serif"],
       },
       colors: {
         gpgreen: "#4A7B39",
@@ -27,7 +28,7 @@ export default {
         coolgray2: "#8a8a8d",
         darkgray2: "#4d4d4f",
         coolgray6: "#a9a8a9",
-        graycartopacity: "rgba(255, 255, 255, 0.2)",
+        graycartopacity: "rgba(255, 255, 255, 0.5)",
         blackcartopacity: "rgba(0, 0, 0, 0.25)",
         transparent: "rgba(255, 255, 255, 0)",
         gpgreenblur: "rgba(74, 123, 57, 0.6)",

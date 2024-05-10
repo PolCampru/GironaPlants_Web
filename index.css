@@ -3,28 +3,32 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "InterLight";
-  src: url("./../assets/fonts/InterLight.otf") format("opentype");
+  font-family: "Inter-Regular";
+  src: url("./assets/fonts/Inter-Regular.ttf");
 }
 @font-face {
-  font-family: "InterRegular";
-  src: url("./../assets/fonts/InterRegular.otf") format("opentype");
+  font-family: "Inter-Light";
+  src: url("./assets/fonts/Inter-Light.ttf");
 }
 @font-face {
-  font-family: "InterMedium";
-  src: url("./../assets/fonts/InterMedium.otf") format("opentype");
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/Inter-Bold.ttf");
 }
 @font-face {
-  font-family: "InterBold";
-  src: url("./../assets/fonts/InterBold.otf") format("opentype");
+  font-family: "Inter-ExtraBold";
+  src: url("./assets/fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("./assets/fonts/Inter-Medium.ttf");
 }
 
 :root {
-  --gp-green: #4A7B39;
+  --gp-green: #4a7b39;
   --graphic-green: #007e0d;
   --reverse-green: #3c9832;
-  --mug-green: #4CAF50;
-  --terracota: #E2725B;
+  --mug-green: #4caf50;
+  --terracota: #e2725b;
   --matte-black: #1a1a1a;
   --white: #ffffff;
   --dark-gray: #4c4d4e;
@@ -38,12 +42,12 @@
   --gray-cart-opacity: rgba(255, 255, 255, 0.2);
   --black-cart-opacity: rgba(0, 0, 0, 0.25);
   --transparent: rgba(255, 255, 255, 0);
-  --gp-green-blur: rgba(74, 123, 57, 0.6)
+  --gp-green-blur: rgba(74, 123, 57, 0.6);
   --navbar-hover: rgba(255, 218, 218, 1);
 }
 
 * {
-  font-family: "InterLight";
+  font-family: "Inter-Light";
   background-color: #252525;
   margin: 0;
   padding: 0;
