@@ -15,6 +15,7 @@ export default {
       colors: {
         gpgreen: "#4A7B39",
         graphicgreen: "#007e0d",
+        darkgreen: "#355724",
         reversegreen: "#3c9832",
         muggreen: "#4CAF50",
         terracota: "#E2725B",

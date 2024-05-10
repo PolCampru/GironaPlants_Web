@@ -1,9 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar/NavBar";
+import HeroHome from "../components/Home/HeroHome";
 ---
 
 <Layout title="GironaPlants" description="Home">
   <NavBar client:only="react" />
-  <main></main>
+  <main>
+    <HeroHome client:only="react" />
+  </main>
 </Layout>
