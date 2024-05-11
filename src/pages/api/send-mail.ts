@@ -6,18 +6,17 @@ export const POST: APIRoute = async ({ request }) => {
   const formData = await request.json();
 
   const transporter = nodemailer.createTransport({
-    port: import.meta.env.MAIL_PORT,
-    host: import.meta.env.MAIL_SERVER,
+    port: import.meta.env.PUBLIC_MAIL_PORT,
+    host: import.meta.env.PUBLIC_MAIL_SERVER,
     auth: {
-      user: import.meta.env.MAIL_USER,
-      pass: import.meta.env.MAIL_PASS,
+      user: import.meta.env.PUBLIC_MAIL_USER,
+      pass: import.meta.env.PUBLIC_MAIL_PASS,
     },
     secure: false,
     tls: {
       rejectUnauthorized: true,
     },
   });
-
   let bodyMail = `
         <h2>Girona Plants - Solicitud informació</h2>
         <p><span>Empresa:</span> ${formData.company} </p>
@@ -32,11 +31,10 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const mailData = {
       from: formData.email as string,
-      to: import.meta.env.MAIL_DESTINATION,
-      subject: "Nuevo contacto de web comercial",
+      to: import.meta.env.PUBLIC_MAIL_DESTINATION,
+      subject: "Nou contacte de la web comercial",
       html: bodyMail,
     };
-
     await transporter.sendMail(mailData);
     return new Response(
       JSON.stringify({
@@ -48,7 +46,7 @@ export const POST: APIRoute = async ({ request }) => {
     console.error(error);
     return new Response(
       JSON.stringify({
-        error: "Error interno del servidor",
+        error,
       }),
       { status: 500 }
     );

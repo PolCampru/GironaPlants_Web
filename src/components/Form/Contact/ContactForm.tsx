@@ -40,7 +40,7 @@ const ContactForm = ({
           mailSuccess ? "blur-sm" : ""
         }`}
       >
-        <form className="bg-white text-black px-10 py-10 border rounded-3xl">
+        <form className="bg-white text-black px-10 py-10 border rounded-3xl z-20">
           <h3 className="font-interBold text-xl lg:text-2xl pb-6">
             {GeneralTitle.title}
           </h3>

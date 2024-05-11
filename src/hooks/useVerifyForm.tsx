@@ -83,8 +83,8 @@ const useContactForm = () => {
     } catch (error) {
       console.log(error);
     } finally {
-      setStateForm(initialState);
       setMailSuccess(true);
+      setStateForm(initialState);
     }
   };
 
