@@ -1,4 +1,5 @@
 import React from "react";
+import { Send } from "tabler-icons-react";
 
 const InputSubmit = ({
   name,
@@ -17,14 +18,14 @@ const InputSubmit = ({
     onSubmit(event);
   };
 
-  const image = "/assets/images/contact/sendIcon.svg";
-
   return (
     <div
-      className="w-full bg-keiserRed p-2 rounded-xl text-white flex justify-center items-center gap-x-2 cursor-pointer bg-gpgreen"
+      className="w-full p-2 rounded-xl text-white flex justify-center items-center gap-x-2 cursor-pointer bg-gpgreen"
       onClick={handleSubmit}
     >
-      <img className="w-4 h-4" src={image} alt={image} />
+      <span className="bg-gpgreen">
+        <Send size={18} style={{ background: "transparent" }} />
+      </span>
       <input
         className="cursor-pointer"
         name={name}

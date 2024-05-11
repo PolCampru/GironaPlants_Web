@@ -21,12 +21,12 @@ const InputCheckbox = ({
     <div className="w-full pb-6 bg-white">
       <label
         htmlFor={id}
-        className="flex items-starslg:items-center text-sm lg:text-base gap-x-2 bg-white"
+        className="flex items-stars lg:items-center text-sm lg:text-base gap-x-2 bg-white"
       >
         <input
           className={`${
             errorExists
-              ? "border-keiserRed appearance-none border rounded-sm bg-white"
+              ? "border-errorRed appearance-none border rounded-sm bg-white"
               : ""
           }  h-3.5 w-3.5`}
           name={name}
@@ -37,7 +37,7 @@ const InputCheckbox = ({
         />
         <p
           className={`${
-            errorExists ? "text-keiserRed" : ""
+            errorExists ? "text-errorRed" : ""
           } w-11/12 leading-none bg-white text-base`}
         >
           Acepto los{" "}

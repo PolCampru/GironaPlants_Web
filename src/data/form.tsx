@@ -6,8 +6,8 @@ import type {
 } from "../types/form";
 
 export const initialState = {
+  company: "",
   name: "",
-  surname: "",
   phone: "",
   email: "",
   message: "",
@@ -17,7 +17,7 @@ export const initialState = {
 
 export const GeneralTitle: GeneralTitleType = {
   title:
-    "Per a facilitar-te una assistència més eficaç i ràpida, si us plau, indiqui'ns què necessites.",
+    "Per a facilitar-te una assistència més eficaç i ràpida, indica'ns que necessites",
 };
 
 export const SuccessMailPopUp: SuccessMailPopUpType = {
@@ -34,15 +34,15 @@ export const SuccessMailPopUp: SuccessMailPopUpType = {
 export const GeneralFormLayout: GeneralFormLayoutType[] = [
   {
     type: "text",
-    name: "name",
-    id: "name",
+    name: "company",
+    id: "company",
     placeholder: "*Empresa",
     error: "L'empresa introduït no és vàlid.",
   },
   {
     type: "text",
-    name: "surname",
-    id: "surname",
+    name: "name",
+    id: "name",
     placeholder: "*Nom",
     error: "El nom introduït no és vàlid.",
   },
@@ -70,7 +70,7 @@ export const GeneralFormLayout: GeneralFormLayoutType[] = [
     type: "radio",
     name: "radio",
     id: "radio",
-    title: "¿A qué hora et va bé que et truquem?",
+    title: "A quina hora et va bé que et truquem?",
     error: "Selecciona l'horari que t'agradi perquè et truquem.",
   },
   {

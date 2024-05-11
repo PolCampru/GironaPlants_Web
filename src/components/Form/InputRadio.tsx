@@ -23,11 +23,13 @@ const InputRadio = ({
 
   return (
     <div className="w-full flex flex-col bg-white">
-      <p className="mb-3">{title}</p>
+      <p className="mb-3 text-base">{title}</p>
       <label className="mb-3 flex items-center bg-white">
         <input
           className={`${
-            errorExists ? "appearance-none border-keiserRed" : "border-darkGray"
+            errorExists
+              ? "appearance-none border-errorRed bg-white"
+              : "border-darkgray"
           } mr-2 border h-4 w-4 rounded-full`}
           name={name}
           id={id + "1"}
@@ -35,7 +37,7 @@ const InputRadio = ({
           value="Pel matí (de 8h a 14h)"
           onChange={handleChange}
         />
-        Por la mañana (de 8h a 14h)
+        Pel matí (de 8h a 14h)
       </label>
 
       <label
@@ -45,7 +47,9 @@ const InputRadio = ({
       >
         <input
           className={`${
-            errorExists ? "appearance-none border-keiserRed" : "border-darkGray"
+            errorExists
+              ? "appearance-none border-errorRed bg-white"
+              : "border-darkgray"
           }  mr-2 border h-4 w-4 rounded-full`}
           name={name}
           id={id + "2"}
@@ -53,9 +57,11 @@ const InputRadio = ({
           value="Per la tarda (de 16h a 18h)"
           onChange={handleChange}
         />
-        Por la tarde (de 16h a 18h)
+        Per la tarda (de 16h a 18h)
       </label>
-      {errorExists && <p className="text-keiserRed mb-2 lg:mb-3">{error}</p>}
+      {errorExists && (
+        <p className="text-errorRed text-base mb-2 lg:mb-3">{error}</p>
+      )}
     </div>
   );
 };

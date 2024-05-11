@@ -38,7 +38,7 @@ const useContactForm = () => {
       regex = /^\d{9}$/;
     } else if (name === "email") {
       regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    } else if (name === "name" || name === "surname") {
+    } else if (name === "name") {
       regex = /^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s-]+$/u;
     }
     if (regex) {

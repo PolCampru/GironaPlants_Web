@@ -37,8 +37,8 @@ const InputText = ({
         <input
           className={`border w-full bg-white p-1.5 pl-3 rounded-lg bg-lightGray shadow-inner focus:outline-none text-sm sm:text-base text-black ${
             errorExists
-              ? "border-keiserRed focus:border-keiserRed"
-              : "border-transparent focus:border-darkGray2"
+              ? "border-errorRed focus:border-errorRed"
+              : "border-transparent focus:border-darkgray2"
           }`}
           name={name}
           id={id}
@@ -59,7 +59,7 @@ const InputText = ({
         />
       )}
 
-      {errorExists && <p className="text-keiserRed">{error}</p>}
+      {errorExists && <p className="text-errorRed text-base">{error}</p>}
     </div>
   );
 };

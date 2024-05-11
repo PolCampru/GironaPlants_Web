@@ -34,6 +34,7 @@ export default {
         transparent: "rgba(255, 255, 255, 0)",
         gpgreenblur: "rgba(74, 123, 57, 0.6)",
         navbarhover: "rgba(255, 218, 218, 1)",
+        errorRed: "#D10A2C",
       },
     },
   },

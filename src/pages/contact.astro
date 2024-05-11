@@ -7,13 +7,14 @@ import { ContactInfoText, GeneralFormLayout, GeneralTitle } from "../data/form";
 ---
 
 <Layout title="Contacte" description="Contacte">
-  <NavBar client:only />
+  <NavBar client:only="react" />
   <main>
     <div
       class="flex flex-col-reverse justify-center items-center lg:flex-row gap-x-4 xl:gap-x-0"
     >
       <ContactInfo ContactInfoText={ContactInfoText} />
       <ContactForm
+        client:only="react"
         GeneralFormLayout={GeneralFormLayout}
         GeneralTitle={GeneralTitle}
       />
