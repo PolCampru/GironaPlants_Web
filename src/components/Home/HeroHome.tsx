@@ -9,7 +9,10 @@ const HeroHome = () => {
           Contacte amb el nostre servei personalitzat i fes realitat el teu
           projecte
         </p>
-        <Button style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <Button
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+          variant="secondary"
+        >
           Demanar pressupost
         </Button>
       </div>

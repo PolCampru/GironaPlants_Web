@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar/NavBar";
 import HeroHome from "../components/Home/HeroHome";
+import PlantsSection from "../components/Home/PlantsSection";
 ---
 
 <Layout title="GironaPlants" description="Home">
-  <NavBar client:only="react" />
+  <NavBar client:only />
   <main>
-    <HeroHome client:only="react" />
+    <HeroHome client:only />
+    <PlantsSection />
   </main>
 </Layout>

@@ -29,9 +29,8 @@ const Button = (props: Button) => {
   } = props;
 
   const secondaryStyles = {
-    background: "transparent",
-    /*color: theme.color.darkGrey,
-    borderColor: theme.color.darkGrey,*/
+    background: theme.color.white,
+    color: theme.color.gpgreen,
   };
 
   const styleOptions = disabled

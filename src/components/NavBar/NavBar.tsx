@@ -29,7 +29,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="w-full fixed top-0 left-0 h-auto mx-auto rounded-b-xl bg-graycartopacity flex flex-col justify-start items-center transition-all duration-300 hover:bg-white">
+    <nav className="w-full z-[100] fixed top-0 left-0 h-auto mx-auto rounded-b-xl bg-graycartopacity flex flex-col justify-start items-center transition-all duration-300 hover:bg-white">
       <div className="w-full flex justify-between items-center bg-gpgreen text-white">
         <div className="bg-transparent flex items-start">
           <Button leftIcon={<Mail size={18} />} onClick={handleMailClick}>

@@ -60,6 +60,18 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  background-color: transparent;
+  font-family: "Inter-Bold";
+  font-size: 30px;
+}
+
+h3 {
+  background-color: transparent;
+  font-family: "Inter-Regular";
+  font-size: 20px;
+}
+
 p {
   background-color: transparent;
   font-size: 20px;

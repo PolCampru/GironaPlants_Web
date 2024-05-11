@@ -18,8 +18,16 @@ const ButtonWrapper = styled.button<{
   font-size: 14px;
   font-family: ${(props) => props.theme.font.InterMedium};
   background-color: ${(props) =>
-    props.$variant === "primary" ? props.theme.color.gpgreen : ""};
+    props.$variant === "primary" && props.theme.color.gpgreen};
   color: white;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 10px 0px
+      ${(props) =>
+        props.$variant === "primary"
+          ? props.theme.color.gpgreen
+          : props.theme.color.white};
+  }
 
   span {
     margin: 0px;
